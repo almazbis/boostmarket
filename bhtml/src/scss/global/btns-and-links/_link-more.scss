@@ -1,0 +1,40 @@
+.link-more {
+	font-family: $f-raj;
+	font-weight: 600;
+	font-size: 1.1em;
+	line-height: 1;
+	text-decoration: none;
+
+	display: inline-block;
+	position: relative;
+	padding-right: 30px;
+	padding-top: 2px;
+
+	transition: $trans;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+		color: darken($c-yellow, 5%);
+	}
+	
+	&::after {
+		content: "";
+		background: url(../assets/icons/link-more-yellow.svg) no-repeat right center;
+		background-size: contain;
+		transform: translateY(-50%);
+
+		position: absolute;
+		right: 0;
+		top: 50%;
+		height: 100%;
+		width: 13px;
+
+		transition: $trans;
+	}
+
+	&:hover::after,
+	&:focus::after {
+		right: -5px;
+	}
+}

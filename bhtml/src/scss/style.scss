@@ -4,13 +4,6 @@ img {
 	max-width: 100%;
 }
 
-a {
-
-	&:hover,
-	&:focus {
-	}
-}
-
 h1, h2, h3, h4, h5, h6 {
 }
 
@@ -27,4 +20,5 @@ body {
 @import 'partials/header';
 @import 'partials/footer';
 
+@import 'module-homepage/homepage';
 @import 'module-catalog/catalog';

@@ -4,7 +4,7 @@
 
 .game-logo {
 	$c: &;
-	font-family: $f-mont;
+	font-family: $f-raj;
 	font-size: 14px;
 	font-weight: 500;
 	text-decoration: none;
@@ -14,7 +14,7 @@
 	display: block;
 	padding: 15px;
 
-	transition: all $trans-fast;
+	transition: all $trans;
 
 	&:hover,
 	&:focus {
@@ -27,7 +27,7 @@
 		margin-bottom: 10px;
 		opacity: .8;
 
-		transition: $trans-slow;
+		transition: $trans;
 
 		img {
 			width: 100%;
@@ -56,7 +56,7 @@
 			bottom: -5px;
 			left: 25%;
 
-			transition: all $trans-slow;
+			transition: all $trans;
 		}
 
 		#{$c}:hover &::after,

@@ -1,0 +1,34 @@
+.home-offer {
+
+	&__title {
+		font-family: $f-raj;
+		font-size: 32px;
+		font-weight: bold;
+
+		margin-bottom: 45px;
+	}
+
+	&__text {
+		margin-bottom: 45px;
+	}
+
+	&__img {
+		text-align: right;
+
+		img {
+			width: 330px;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+
+	.home-offer {
+
+		&__title {
+			font-size: 52px;
+		}
+
+	}
+
+}

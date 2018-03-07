@@ -1,1 +1,11 @@
+a {
+	color: $c-yellow;
+
+	&:hover,
+	&:focus {
+		color: darken($c-yellow, 10%);
+	}
+}
+
 @import 'btns-and-links/btn-primary';
+@import 'btns-and-links/link-more';
