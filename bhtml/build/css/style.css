@@ -1,0 +1,317 @@
+img {
+  max-width: 100%;
+}
+
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #545D70;
+}
+
+.f-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.f-raj {
+  font-family: "Rajdhani", sans-serif;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.bigger {
+  font-size: 1.3em;
+}
+
+.smaller {
+  font-size: .8em;
+}
+
+@media screen and (max-width: 576px) {
+  .bigger {
+    font-size: 1.15em;
+  }
+  .smaller {
+    font-size: .9em;
+  }
+}
+
+.text {
+  line-height: 1.7;
+}
+
+.text p {
+  margin-bottom: 1em;
+}
+
+.section {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+
+.divider {
+  background-color: #333944;
+}
+
+.divider--white {
+  background-color: #fff;
+}
+
+.divider--trans {
+  opacity: .3;
+}
+
+.divider--mt {
+  margin-top: 60px;
+}
+
+.divider--mb {
+  margin-bottom: 60px;
+}
+
+.divider--v {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1px;
+  height: 1em;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.logo {
+  display: block;
+  max-width: 200px;
+}
+
+.logo img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.header-nav {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .header-nav .logo {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .header-nav-col {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .header-nav-col--logo {
+    text-align: center;
+  }
+  .header-nav-col--menu {
+    text-align: center;
+  }
+  .header-nav-col--user {
+    text-align: center;
+  }
+}
+
+.menu {
+  padding-top: 5px;
+}
+
+.menu > ul {
+  padding: 0;
+  margin: 0;
+}
+
+.menu > ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0 2px;
+}
+
+.menu a {
+  font-family: "Rajdhani", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 3px 6px;
+  -webkit-transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.menu a:hover, .menu a:focus {
+  text-decoration: none;
+  color: #fff;
+  background-color: #ffb100;
+  outline: none;
+}
+
+.header-login__btns {
+  padding: 5px 15px;
+  margin: 0;
+}
+
+.header-login__btns li {
+  list-style-type: none;
+}
+
+.header-login-item {
+  line-height: 1;
+  display: inline-block;
+  padding: 0;
+  margin: 25px 10px;
+}
+
+.header-login-item a {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffb100;
+  display: block;
+  position: relative;
+}
+
+.header-login-item a:hover, .header-login-item a:focus {
+  text-decoration: none;
+  color: #ffb100;
+  outline: none;
+}
+
+.header-login-item a::after, .header-login-item a::before {
+  content: "";
+  background-color: #ffb100;
+  opacity: .3;
+  display: block;
+  width: 40%;
+  height: 2px;
+  position: absolute;
+  bottom: -5px;
+  left: 30%;
+  -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.header-login-item a::before {
+  bottom: initial;
+  top: -5px;
+}
+
+.header-login-item a:hover::after, .header-login-item a:hover::before, .header-login-item a:focus::after, .header-login-item a:focus::before {
+  opacity: 1;
+  width: 90%;
+  left: 5%;
+}
+
+@media screen and (max-width: 767px) {
+  .header-login-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.games-col {
+  margin-bottom: 30px;
+}
+
+.game-logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  display: block;
+  padding: 15px;
+  -webkit-transition: all 200ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 200ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.game-logo:hover, .game-logo:focus {
+  text-decoration: none;
+  color: #ffb100;
+  outline: none;
+}
+
+.game-logo__img {
+  margin-bottom: 10px;
+  opacity: .8;
+  -webkit-transition: 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.game-logo__img img {
+  width: 100%;
+}
+
+.game-logo:hover .game-logo__img,
+.game-logo:focus .game-logo__img {
+  opacity: 1;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.game-logo__title {
+  display: inline-block;
+  position: relative;
+}
+
+.game-logo__title::after {
+  content: "";
+  background-color: #ffb100;
+  opacity: .5;
+  display: block;
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  bottom: -5px;
+  left: 25%;
+  -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.game-logo:hover .game-logo__title::after,
+.game-logo:focus .game-logo__title::after {
+  opacity: 1;
+  width: 94%;
+  left: 3%;
+}
+
+@media screen and (min-width: 768px) {
+  .game-logo {
+    font-size: 16px;
+  }
+}
+
+.games {
+  background-color: #495161;
+}

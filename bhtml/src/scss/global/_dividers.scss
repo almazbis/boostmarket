@@ -1,0 +1,23 @@
+.divider {
+	background-color: $c-black;
+
+	&--white {
+		background-color: #fff;
+	}
+
+	&--trans {
+		opacity: .3;
+	}
+
+	&--mt {
+		margin-top: 60px;	
+	}
+
+	&--mb {
+		margin-bottom: 60px;
+	}
+}
+
+
+
+@import 'dividers/vertical';
