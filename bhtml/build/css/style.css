@@ -74,6 +74,19 @@ body {
   }
 }
 
+.page-title {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 576px) {
+  .page-title {
+    font-size: 38px;
+  }
+}
+
 a {
   color: #ffb100;
 }
@@ -149,6 +162,66 @@ a:hover, a:focus {
   .section {
     padding-top: 90px;
     padding-bottom: 90px;
+  }
+}
+
+.page-header {
+  margin-bottom: 60px;
+}
+
+.page-header__inner {
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.page-header-details {
+  font-weight: 600;
+  opacity: .7;
+  margin-bottom: 15px;
+}
+
+.page-header-details-item {
+  margin-right: 15px;
+}
+
+.page-inner {
+  background-color: rgba(51, 57, 68, 0.9);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.post-text {
+  line-height: 1.7;
+}
+
+.post-text p {
+  margin-bottom: 2em;
+}
+
+.post-text img {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.post-text figure {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.post-text figure img {
+  margin: 0;
+}
+
+.post-content {
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .post-text {
+    font-size: 18px;
   }
 }
 

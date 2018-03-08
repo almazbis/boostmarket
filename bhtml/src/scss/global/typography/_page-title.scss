@@ -1,0 +1,15 @@
+.page-title {
+	font-family: $f-raj;
+	font-size: 32px;
+	font-weight: bold;
+
+	margin-bottom: 15px;
+}
+
+@media screen and (min-width: 576px) {
+
+	.page-title {
+		font-size: 38px;
+	}
+
+}

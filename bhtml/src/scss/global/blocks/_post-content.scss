@@ -1,0 +1,36 @@
+.post-text {
+	line-height: 1.7;
+
+	p {
+		margin-bottom: 2em;
+	}
+
+	img {
+		margin-top: 45px;
+		margin-bottom: 45px;
+	}
+
+	figure {
+		margin-top: 45px;
+		margin-bottom: 45px;
+
+		img {
+			margin: 0;
+		}
+	}
+}
+
+.post-content {
+	max-width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+@media screen and (min-width: 992px) {
+
+	.post-text {
+		font-size: 18px;
+	}
+
+}
