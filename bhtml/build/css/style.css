@@ -8,6 +8,27 @@ body {
   background-color: #545D70;
 }
 
+.skew-bg {
+  content: "";
+  background-color: rgba(51, 57, 68, 0.1);
+  display: block;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 40%;
+  height: 100%;
+  width: 50%;
+  -webkit-transform: skew(-35deg) translateX(-50%);
+          transform: skew(-35deg) translateX(-50%);
+}
+
+@media screen and (max-width: 767px) {
+  .skew-bg {
+    left: 40%;
+    width: 70%;
+  }
+}
+
 .f-roboto {
   font-family: "Roboto", sans-serif;
 }
@@ -78,6 +99,7 @@ a:hover, a:focus {
 .link-more:hover, .link-more:focus {
   text-decoration: none;
   color: #e69f00;
+  outline: none;
 }
 
 .link-more::after {
@@ -99,13 +121,23 @@ a:hover, a:focus {
   right: -5px;
 }
 
+.link-more--lg {
+  font-size: 1.3em;
+  padding-right: 35px;
+}
+
+.link-more--lg::after {
+  width: 15px;
+}
+
 .text {
   font-family: "Roboto", sans-serif;
+  font-weight: normal;
   line-height: 1.7;
 }
 
 .text p {
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 .section {
@@ -286,6 +318,59 @@ a:hover, a:focus {
   }
 }
 
+.global-footer {
+  background-color: rgba(51, 57, 68, 0.8);
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.footer-col {
+  margin-bottom: 45px;
+}
+
+.footer-col-title {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: .7;
+  margin-bottom: 20px;
+}
+
+.footer-list {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list > ul,
+.footer-list > ol {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-list li {
+  list-style-type: none;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer-logo {
+  margin-bottom: 15px;
+}
+
+.footer-logo img {
+  opacity: .5;
+  width: 200px;
+}
+
+.footer-copy__small {
+  font-family: "Rajdhani", sans-serif;
+}
+
+.footer-copy__small small {
+  font-size: 16px;
+  opacity: .7;
+}
+
 .home-offer__title {
   font-family: "Rajdhani", sans-serif;
   font-size: 32px;
@@ -385,5 +470,5 @@ a:hover, a:focus {
 }
 
 .games {
-  background-color: #495161;
+  background-color: rgba(51, 57, 68, 0.3);
 }

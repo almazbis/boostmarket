@@ -13,6 +13,27 @@ body {
 	background-color: $c-bg;
 }
 
+.skew-bg {
+	content: "";
+	background-color: rgba($c-black, .1);
+
+	display: block;
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	left: 40%;
+	height: 100%;
+	width: 50%;
+	transform: skew(-35deg) translateX(-50%);
+}
+
+@media screen and (max-width: 767px) {
+	.skew-bg {
+		left: 40%;
+		width: 70%;
+	}	
+}
+
 @import 'global/global';
 
 @import 'components/logo';

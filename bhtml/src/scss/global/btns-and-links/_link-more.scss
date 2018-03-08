@@ -16,6 +16,7 @@
 	&:focus {
 		text-decoration: none;
 		color: darken($c-yellow, 5%);
+		outline: none;
 	}
 	
 	&::after {
@@ -37,4 +38,14 @@
 	&:focus::after {
 		right: -5px;
 	}
+
+	&--lg {
+		font-size: 1.3em;
+		padding-right: 35px;
+		
+		&::after {
+			width: 15px;
+		}
+	}
+
 }
