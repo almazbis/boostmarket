@@ -29,6 +29,10 @@ body {
   }
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Rajdhani", sans-serif;
+}
+
 .f-roboto {
   font-family: "Roboto", sans-serif;
 }
@@ -544,4 +548,69 @@ a:hover, a:focus {
 
 .games {
   background-color: rgba(51, 57, 68, 0.3);
+}
+
+.store-thumb {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 15px;
+  -webkit-transition: 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.store-thumb:hover, .store-thumb:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+.store-thumb__img {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.store-thumb__img::after {
+  content: "";
+  background: rgba(29, 33, 39, 0.8) url(../assets/icons/external-link.svg) no-repeat center;
+  background-size: 20px;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.store-thumb:hover .store-thumb__img::after,
+.store-thumb:focus .store-thumb__img::after {
+  opacity: .7;
+}
+
+.store-thumb__title {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+
+.store-thumb__excerpt {
+  font-size: 14px;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.store-thumb:hover .store-thumb__excerpt,
+.store-thumb:focus .store-thumb__excerpt {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.stores-list-col {
+  margin-bottom: 30px;
 }

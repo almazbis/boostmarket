@@ -1,0 +1,31 @@
+// initial variables. May be rewritten in a theme file
+@import 'store/vars';
+
+img {
+	max-width: 100%;
+}
+
+html {
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+
+body {
+	font-size: 16px;
+	color: $c-black;
+	background-color: $c-bg;
+}
+
+
+@import './store/global/global';
+
+@import './store/components/logo';
+@import './store/components/menu';
+
+@import './store/products/products-single';
+@import './store/products/products-thumbs';
+
+@import './store/components/intro';
+
+@import './store/partials/header';
+@import './store/partials/footer';

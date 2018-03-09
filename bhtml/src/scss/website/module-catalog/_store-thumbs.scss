@@ -1,0 +1,76 @@
+.store-thumb {
+	$c: &;
+
+	text-decoration: none;
+	
+	display: block;
+	margin-bottom: 15px;
+
+	transition: $trans;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+		outline: none;
+	}
+
+	&__img {
+		position: relative;
+		margin-bottom: 15px;
+
+		&::after {
+			content: "";
+			background: rgba(darken($c-black, 10%), .8) url(../assets/icons/external-link.svg) no-repeat center;
+			background-size: 20px;
+			opacity: 0;
+
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+
+			transition: $trans;
+		}
+	}
+
+	&:hover #{$c}__img,
+	&:focus #{$c}__img {
+		
+		&::after {
+			opacity: .7;
+		}
+	}
+
+	&__title {
+		font-family: $f-raj;
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 1.2;
+
+		margin-bottom: 5px;
+	}
+
+	&__excerpt {
+		font-size: 14px;
+		line-height: 1.2;
+
+		color: rgba(#fff, .7);
+
+		transition: $trans;
+	}
+
+	&:hover #{$c}__excerpt,
+	&:focus #{$c}__excerpt {
+		color: rgba(#fff, .5);
+	}
+}
+
+
+
+.stores-list-col {
+	margin-bottom: 30px;
+}

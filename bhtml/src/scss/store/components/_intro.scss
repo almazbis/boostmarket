@@ -1,0 +1,40 @@
+.intro {
+	padding-top: 45px;
+	padding-bottom: 45px;
+
+	&__content {
+		max-width: 800px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	&__text {
+
+		p {
+			line-height: 1.7;
+		}
+	}
+
+	&--dark {
+		background-color: $c-black;
+		color: #fff;
+	}
+
+	&--gray {
+		background-color: $c-gray-light;
+	}
+
+	@media screen and (min-width: 576px) {
+		padding-top: 75px;
+		padding-bottom: 75px;
+
+		&__text {
+			font-size: 18px;
+		}
+	}
+
+	@media screen and (min-width: 992px) {
+		padding-top: 90px;
+		padding-bottom: 90px;
+	}
+}

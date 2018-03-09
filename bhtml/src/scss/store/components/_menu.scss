@@ -1,0 +1,30 @@
+.menu-item {
+	font-family: $f-raj;
+	font-size: 18px;
+	font-weight: bold;
+
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.menu-links {
+	padding: 0;
+	margin: 0;
+}
+
+.menu {
+	padding: 0;
+	margin: 0;
+
+	&--white {
+
+		.menu-item {
+
+			a {
+				color: #fff;
+			}
+		}
+	}
+}

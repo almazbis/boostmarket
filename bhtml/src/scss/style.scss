@@ -1,4 +1,4 @@
-@import 'vars';
+@import './website/vars';
 
 img {
 	max-width: 100%;
@@ -34,12 +34,12 @@ body {
 	}	
 }
 
-@import 'global/global';
+@import './website/global/global';
 
-@import 'components/logo';
+@import './website/components/logo';
 
-@import 'partials/header';
-@import 'partials/footer';
+@import './website/partials/header';
+@import './website/partials/footer';
 
-@import 'module-homepage/homepage';
-@import 'module-catalog/catalog';
+@import './website/module-homepage/homepage';
+@import './website/module-catalog/catalog';
