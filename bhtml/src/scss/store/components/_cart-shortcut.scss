@@ -1,0 +1,38 @@
+.cart-shortcut {
+	text-decoration: none;
+	color: $c-black;
+	background-color: rgba($c-black, .08);
+	background-image: url(../assets-store/icons/cart.svg);
+	background-repeat: no-repeat;
+	background-size: 18px;
+	background-position: 15px center;
+	border-radius: 4px;
+
+	display: inline-block;
+	// width: 300px;
+	// max-width: 100%;
+	padding: 10px 30px;
+	padding-left: 50px;
+
+	transition: $trans-fast;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+		color: $c-black;
+		background-color: rgba($c-black, .12);
+		outline: none;
+	}
+
+	.global-header--dark & {
+		color: #fff;
+		background-color: rgba(#fff, .08);
+		background-image: url(../assets-store/icons/cart-white.svg);
+
+		&:hover,
+		&:focus {
+			color: #fff;
+			background-color: rgba(#fff, .12);
+		}
+	}
+}

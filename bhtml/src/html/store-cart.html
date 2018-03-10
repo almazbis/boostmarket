@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	@@include('./store/partials/_head.html')
+</head>
+<body>
+
+<!-- Available classes: .theme-primary -->
+<div class="store cart theme-primary">
+
+@@include('./store/partials/_header.html')
+
+<div class="cart-inner">
+	<div class="page-header">
+		<div class="container">
+			<h2 class="page-title">Cart</h2>
+		</div>
+	</div>
+
+	<div class="cart-items">
+		<div class="container">
+			<div class="cart-table">
+
+				<div class="cart-item">
+					<div class="cart-item-row row align-items-center">
+						<div class="col-2 col-md-2 d-none d-md-block">
+							<div class="cart-item-img"><img src="uploads-store/product.jpg" alt=""></div>
+						</div>
+						<div class="col col-md-5">
+							<div class="cart-item-title"><a href="store-product.html"><b>Wow Gold Distribution 1</b></a></div>
+							<div class="cart-item-order-details">
+								<div class="cart-item-order-details__item">100 golden coins</div>
+							</div>
+						</div>
+						<div class="col-auto col-md-3">
+							<div class="cart-item-price">$<span class="cart-item-price__number">50</span></div>
+						</div>
+						<div class="col-12 col-md-2">
+							<button class="btn btn-outline-danger btn-sm">Remove</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="cart-item">
+					<div class="cart-item-row row align-items-center">
+						<div class="col-2 col-md-2 d-none d-md-block">
+							<div class="cart-item-img"><img src="uploads-store/product.jpg" alt=""></div>
+						</div>
+						<div class="col col-md-5">
+							<div class="cart-item-title"><a href="store-product.html"><b>Wow Gold Distribution 1</b></a></div>
+							<div class="cart-item-order-details">
+								<div class="cart-item-order-details__item">150 golden coins</div>
+							</div>
+						</div>
+						<div class="col-auto col-md-3">
+							<div class="cart-item-price">$<span class="cart-item-price__number">70</span></div>
+						</div>
+						<div class="col-12 col-md-2">
+							<button class="btn btn-outline-danger btn-sm">Remove</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="cart-footer">
+		<div class="container">
+			<div class="cart-footer__inner">
+				<div class="row">
+					<div class="col-12 col-md"></div>
+					<div class="col-12 col-md text-right">
+						<div class="cart-total">
+							<b>Total:</b> <span class="cart-total-sum">$<span class="cart-total-sum__number">120</span></span>
+						</div>
+						<button class="btn btn-primary">Checkout</button>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+</div>
+
+</div>
+
+@@include('./store/partials/_footer.html')
+
+@@include('./store/partials/_footer-scripts.html')
+
+</body>
+</html>

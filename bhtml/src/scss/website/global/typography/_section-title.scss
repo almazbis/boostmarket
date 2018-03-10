@@ -1,0 +1,21 @@
+.section-title {
+	font-family: $f-raj;
+	font-size: 32px;
+	font-weight: bold;
+
+	margin-bottom: 45px;
+
+	&--center {
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 576px) {
+
+	.section-title {
+		font-size: 38px;
+
+		margin-bottom: 60px;
+	}
+
+}

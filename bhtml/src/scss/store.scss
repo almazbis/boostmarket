@@ -21,11 +21,13 @@ body {
 
 @import './store/components/logo';
 @import './store/components/menu';
-
-@import './store/products/products-single';
-@import './store/products/products-thumbs';
+@import './store/components/cart-shortcut';
 
 @import './store/components/intro';
 
 @import './store/partials/header';
 @import './store/partials/footer';
+
+@import './store/module-products/products-single';
+@import './store/module-products/products-thumbs';
+@import './store/module-cart/cart';
