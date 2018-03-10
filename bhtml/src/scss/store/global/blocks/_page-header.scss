@@ -1,0 +1,21 @@
+.page-header {
+	margin-bottom: 60px;
+
+	&__inner {
+		max-width: 900px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+
+.page-header-details {
+	font-weight: 600;
+	opacity: .7;
+
+	margin-bottom: 15px;
+}
+
+.page-header-details-item {
+	margin-right: 15px;
+}
