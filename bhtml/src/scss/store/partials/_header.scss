@@ -1,3 +1,5 @@
+@import './components/header-nav';
+
 .global-header {
 	background-size: cover;
 	background-position: center;
@@ -51,8 +53,8 @@
 .header-lead {
 	position: relative;
 	z-index: 1;
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 90px;
+	padding-bottom: 75px;
 
 	&__title {
 		font-family: $f-raj;
@@ -78,8 +80,8 @@
 	}
 
 	@media screen and (min-width: 576px) {
-		padding-top: 90px;
-		padding-bottom: 90px;
+		padding-top: 120px;
+		padding-bottom: 120px;
 
 		&__title {
 			font-size: 36px;

@@ -52,10 +52,24 @@
 }
 
 
+.product-option {
+	margin-bottom: 45px;
+
+	&__title {
+		font-size: 18px;
+		font-weight: bold;
+
+		margin-bottom: 10px;
+	}
+}
+
+.product-options {
+
+}
+
 .product-price {
 	max-width: 320px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 
 	&__label {
 		font-weight: bold;
