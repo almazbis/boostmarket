@@ -30,4 +30,6 @@ body {
 
 @import './store/module-products/products-single';
 @import './store/module-products/products-thumbs';
-@import './store/module-cart/cart';
+
+@import './store/module-checkout/cart';
+@import './store/module-checkout/checkout';

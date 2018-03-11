@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	@@include('./store/partials/_head.html')
+</head>
+<body>
+
+<!-- Available classes: .theme-primary -->
+<div class="store cart theme-primary">
+
+@@include('./store/partials/_header.html')
+
+<div class="page-inner">
+
+	<div class="page-header">
+		<div class="container">
+			<h2 class="page-title">Checkout</h2>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="order-details">
+			<div class="order-details__title">
+				<div class="order-number">Order №234454</div>
+				<div class="order-date">March 22 2018</div>
+			</div>
+			<div class="order-details__shop">in Storename</div>
+		</div>
+	</div>
+
+	<div class="checkout-items">
+		<div class="container">
+			<table class="table table-striped">
+			  <thead class="thead-dark">
+			    <tr>
+			      <th scope="col">#</th>
+			      <th scope="col">Product</th>
+			      <th scope="col">Price</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <th scope="row">1</th>
+			      <td>
+			      	<div class="checkout-item-title">100 WOW Gold</div>
+				  </td>
+			      <td>$120</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">2</th>
+			      <td>
+			      	<div class="checkout-item-title">Raid</div>
+			      	<div class="checkout-item-details">
+						<ul>
+							<li>Loot type: Master loot</li>
+							<li>Loot priority:
+								<ol>
+									<li>Blah Blah - <b class="secondary">$50</b></li>
+									<li>Blah Blah - <b class="secondary">$50</b></li>
+								</ol>
+							</li>
+						</ul>
+			      	</div>
+			      </td>
+			      <td>$120</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">3</th>
+			      <td>
+			      	<div class="checkout-item-title">100 WOW Gold</div>
+				  </td>
+			      <td>$120</td>
+			    </tr>
+			  </tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="checkout-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-4">
+					<div class="checkout-total">
+						Total: $360
+					</div>
+				</div>
+				<div class="col">
+					<div class="checkout-how-to-pay">
+						<p>Send funds to one of our accounts with the following comment:</p>
+						<div class="checkout-how-to-pay__comment">234454</div>
+						<div class="checkout-how-to-pay-accounts">
+							<h4>Accounts:</h4>
+							<div class="checkout-how-to-pay-account">
+								<div class="row">
+									<div class="col"><b>Qiwi</b></div>
+									<div class="col">+77777777</div>
+								</div>
+							</div>
+							<div class="checkout-how-to-pay-account">
+								<div class="row">
+									<div class="col"><b>Paypal</b></div>
+									<div class="col">yeboi@gmail.com</div>
+								</div>
+							</div>
+						</div>
+						<div class="alert alert-warning" role="alert">
+						  <b>Please</b>, don't forget to include the comment with the number above. If you have any problems with the purchase, don't hesitate to contact support.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+<!-- 
+Заказ номер 16777 от 22 апреля 2018
+У Бустер321
+
+Голда 50 - 100$
+Кач 10-200 - 300$
+Итого 400$
+
+Для передачи закза исполнителю оплатите нам на кивас. Если возникли трудности, свяжитесь с поддержкой
+
+ -->
+
+</div>
+
+</div>
+
+@@include('./store/partials/_footer.html')
+
+@@include('./store/partials/_footer-scripts.html')
+
+</body>
+</html>

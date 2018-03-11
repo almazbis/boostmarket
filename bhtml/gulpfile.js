@@ -1,4 +1,5 @@
 const   gulp = require("gulp"),
+        wait = require("gulp-wait"),
         sass = require("gulp-sass"),
         autoprefixer = require("gulp-autoprefixer"),
         babel = require("gulp-babel"),
@@ -40,6 +41,7 @@ gulp.task("css", function(){
     return gulp.src('src/scss/**/*.scss')
       .pipe(sass({ outputStyle: 'expanded'}).on('error', sass.logError) )
       .pipe(autoprefixer({browsers: ['last 2 versions']}))
+      .pipe(wait(100))
       .pipe(gulp.dest('build/css') )
       .pipe(browserSync.stream() )
 });

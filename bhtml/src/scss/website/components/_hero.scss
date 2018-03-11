@@ -1,0 +1,56 @@
+.hero {
+	background: url(../assets/img/hero.jpg) no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+
+	position: relative;
+	z-index: 1;
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	&::before {
+		content: "";
+		background-color: rgba(darken($c-black, 15%), .5);
+
+		display: block;
+		position: absolute;
+		z-index: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__text {
+		font-family: $f-raj;
+		font-size: 20px;
+		text-align: center;
+		text-shadow: 1px 1px rgba(darken($c-black, 15%), .7);
+
+		position: relative;
+		z-index: 1;
+		max-width: 800px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	@media screen and (min-width: 576px) {
+		padding-top: 120px;
+		padding-bottom: 120px;
+
+		&__text {
+			font-size: 24px;
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		padding-top: 190px;
+		padding-bottom: 190px;
+
+		&__text {
+			font-size: 32px;
+		}
+	}
+}
