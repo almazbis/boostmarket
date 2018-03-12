@@ -17,7 +17,7 @@
 
 			<div class="col-12 col-md-5">
 				<div class="single-product-img"><img src="uploads-store/product-2.jpg" alt=""></div>
-				<div class="single-product-text">
+				<div class="single-product-text text">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis perferendis et quam eveniet, quibusdam soluta, quae excepturi maxime minima aut quo velit odit veniam magnam facilis fugit inventore earum nemo enim nulla, asperiores eum amet? </p>
 					<ul>
 						<li>List item</li>
@@ -29,43 +29,51 @@
 
 			<div class="col">
 
-				<div class="product-options">
-					<div class="product-options__inner">
-
-						<div class="product-option">
-							<h4 class="product-option__title">Loot type</h4>
-							<div class="form-check">
-							  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-							  <label class="form-check-label" for="exampleRadios1">Master Loot</label>
-							</div>
-							<div class="form-check">
-							  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-							  <label class="form-check-label" for="exampleRadios2">Personal Loot</label>
-							</div>
+				<div class="product-section">
+					<h4 class="product-section__title">Loot type</h4>
+					<div class="radios-list">								
+						<div class="radio-wrap">
+							<label class="radio">
+								<input type="radio" name="product-loot-type">
+								<div class="radio-content">Master Loot</div>
+							</label>
 						</div>
-
-						<div class="product-option">
-							<h4 class="product-option__title">Loot priority</h4>
-							<div class="form-check">
-							  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-							  <label class="form-check-label" for="defaultCheck1">
-							    Blah Blah - <b class="secondary">$50</b>
-							  </label>
-							</div>
-							<div class="form-check">
-							  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-							  <label class="form-check-label" for="defaultCheck2">
-							    Blah Blah - <b class="secondary">$50</b>
-							  </label>
-							</div>
-							<div class="form-check">
-							  <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
-							  <label class="form-check-label" for="defaultCheck3">
-							    Blah Blah - <b class="secondary">$50</b>
-							  </label>
-							</div>
+						<div class="radio-wrap">
+							<label class="radio">
+								<input type="radio" name="product-loot-type">
+								<div class="radio-content">Personal Loot</div>
+							</label>
 						</div>
-
+					</div>
+				</div>
+				
+				<div class="product-section">
+					<h4 class="product-section__title">Loot priority</h4>
+					<div class="checkboxes-list">
+						<div class="checkbox-wrap">
+							<label class="checkbox">
+								<input type="checkbox" name="product-loot-type">
+								<div class="checkbox-content">Option - <b class="secondary">$50</b></div>
+							</label>
+						</div>
+						<div class="checkbox-wrap">
+							<label class="checkbox">
+								<input type="checkbox" name="product-loot-type">
+								<div class="checkbox-content">Another option - <b class="secondary">$100</b></div>
+							</label>
+						</div>
+						<div class="checkbox-wrap">
+							<label class="checkbox">
+								<input type="checkbox" name="product-loot-type">
+								<div class="checkbox-content">Third option - <b class="secondary">$10</b></div>
+							</label>
+						</div>
+						<div class="checkbox-wrap">
+							<label class="checkbox">
+								<input type="checkbox" name="product-loot-type">
+								<div class="checkbox-content">Last option - <b class="secondary">$50</b></div>
+							</label>
+						</div>
 					</div>
 				</div>
 

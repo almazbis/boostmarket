@@ -1,0 +1,42 @@
+.radio-wrap {
+	
+	.radios-grid & {
+		display: inline-block;
+		margin-right: 15px;
+		margin-bottom: 12px;
+	}
+
+	.radios-list {
+		display: block;
+		margin-bottom: 10px;
+	}
+}
+
+.radio {
+  $c: &;
+
+  display: block;
+  width: 100%;
+  margin: 0;
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  .radio-content {
+    font-weight: 500;
+    background-image: url(../assets-store/icons/radio.svg);
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 8px center;
+    
+    display: block;
+    padding: 6px 20px;
+    padding-left: 38px;
+  }
+
+  input[type="radio"]:checked ~ .radio-content {
+  	background-color: rgba($c-black, .1);
+    background-image: url(../assets-store/icons/radio-checked.svg);
+  }
+}

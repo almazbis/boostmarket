@@ -1,0 +1,42 @@
+.checkbox-wrap {
+	
+	.checkboxes-grid & {
+		display: inline-block;
+		margin-right: 15px;
+		margin-bottom: 12px;
+	}
+
+	.checkboxes-list {
+		display: block;
+		margin-bottom: 10px;
+	}
+}
+
+.checkbox {
+  $c: &;
+
+  display: block;
+  width: 100%;
+  margin: 0;
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  .checkbox-content {
+    font-weight: 500;
+    background-image: url(../assets-store/icons/checkbox.svg);
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 8px center;
+    
+    display: block;
+    padding: 6px 20px;
+    padding-left: 38px;
+  }
+
+  input[type="checkbox"]:checked ~ .checkbox-content {
+  	background-color: rgba($c-black, .1);
+    background-image: url(../assets-store/icons/checkbox-checked.svg);
+  }
+}

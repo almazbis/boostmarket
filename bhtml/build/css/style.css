@@ -172,7 +172,7 @@ a:hover, a:focus {
 }
 
 .text {
-  font-family: "Roboto", sans-serif;
+  font-family: "PT Serif", serif;
   font-weight: normal;
   line-height: 1.7;
 }
@@ -554,148 +554,6 @@ a:hover, a:focus {
   }
 }
 
-.games-col {
-  margin-bottom: 30px;
-}
-
-.game-logo {
-  font-family: "Rajdhani", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  text-decoration: none;
-  text-align: center;
-  color: #fff;
-  display: block;
-  padding: 15px;
-  -webkit-transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.game-logo:hover, .game-logo:focus {
-  text-decoration: none;
-  color: #ffb100;
-  outline: none;
-}
-
-.game-logo__img {
-  margin-bottom: 10px;
-  opacity: .8;
-  -webkit-transition: 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.game-logo__img img {
-  width: 100%;
-}
-
-.game-logo:hover .game-logo__img,
-.game-logo:focus .game-logo__img {
-  opacity: 1;
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
-}
-
-.game-logo__title {
-  display: inline-block;
-  position: relative;
-}
-
-.game-logo__title::after {
-  content: "";
-  background-color: #ffb100;
-  opacity: .5;
-  display: block;
-  width: 50%;
-  height: 2px;
-  position: absolute;
-  bottom: -5px;
-  left: 25%;
-  -webkit-transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.game-logo:hover .game-logo__title::after,
-.game-logo:focus .game-logo__title::after {
-  opacity: 1;
-  width: 94%;
-  left: 3%;
-}
-
-@media screen and (min-width: 768px) {
-  .game-logo {
-    font-size: 16px;
-  }
-}
-
-.games {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.store-thumb {
-  text-decoration: none;
-  display: block;
-  margin-bottom: 15px;
-  -webkit-transition: 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.store-thumb:hover, .store-thumb:focus {
-  text-decoration: none;
-  outline: none;
-}
-
-.store-thumb__img {
-  position: relative;
-  margin-bottom: 15px;
-}
-
-.store-thumb__img::after {
-  content: "";
-  background: rgba(29, 33, 39, 0.8) url(../assets/icons/external-link.svg) no-repeat center;
-  background-size: 20px;
-  opacity: 0;
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-transition: 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.store-thumb:hover .store-thumb__img::after,
-.store-thumb:focus .store-thumb__img::after {
-  opacity: .7;
-}
-
-.store-thumb__title {
-  font-family: "Rajdhani", sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 1.2;
-  margin-bottom: 5px;
-}
-
-.store-thumb__excerpt {
-  font-size: 14px;
-  line-height: 1.2;
-  color: rgba(255, 255, 255, 0.7);
-  -webkit-transition: 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.store-thumb:hover .store-thumb__excerpt,
-.store-thumb:focus .store-thumb__excerpt {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.stores-list-col {
-  margin-bottom: 30px;
-}
-
 .hex-grid-item {
   text-decoration: none;
   text-align: center;
@@ -748,7 +606,7 @@ a:hover, a:focus {
 }
 
 .hex-grid-item:hover::before, .hex-grid-item:focus::before {
-  opacity: 1;
+  opacity: 0.92;
 }
 
 .hex-grid-item__title {
@@ -905,4 +763,73 @@ a:hover, a:focus {
   .hex-grid-mobile {
     display: block;
   }
+}
+
+.games {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.store-thumb {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 15px;
+  -webkit-transition: 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.store-thumb:hover, .store-thumb:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+.store-thumb__img {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.store-thumb__img::after {
+  content: "";
+  background: rgba(29, 33, 39, 0.8) url(../assets/icons/external-link.svg) no-repeat center;
+  background-size: 20px;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.store-thumb:hover .store-thumb__img::after,
+.store-thumb:focus .store-thumb__img::after {
+  opacity: .7;
+}
+
+.store-thumb__title {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+
+.store-thumb__excerpt {
+  font-size: 14px;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.store-thumb:hover .store-thumb__excerpt,
+.store-thumb:focus .store-thumb__excerpt {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.stores-list-col {
+  margin-bottom: 30px;
 }

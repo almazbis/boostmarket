@@ -1,5 +1,21 @@
 .product-thumb {
+	text-decoration: none;
+	color: $c-black;
+	border: 3px solid rgba($c-black, .1);
+	border-radius: 4px;
+
 	display: block;
+	height: 100%;
+	padding: 15px;
+
+	transition: $trans-fast;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+		color: $c-black;
+		background-color: rgba($c-black, .05);
+	}
 
 	&__img {
 		margin-bottom: 15px;
@@ -12,9 +28,11 @@
 	}
 	
 	&__title {
-		font-size: 16px;
+		font-size: 18px;
 		font-weight: bold;
-		
+	}
+
+	&__price {
 	}
 
 	@media screen and (max-width: 480px) {

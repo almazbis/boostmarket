@@ -1,3 +1,71 @@
+////////////////////////////////
+// USER OPTIONS
+////////////////////////////////
+
+
+.product-section {
+	background-color: rgba($c-black, .05);
+	border-radius: 4px;
+
+	padding: 15px;
+	margin-bottom: 30px;
+
+	&__title {
+		font-family: $f-raj;
+		font-size: 20px;
+		font-weight: bold;
+
+		margin-bottom: 20px;
+	}
+
+	@media screen and (min-width: 360px) {
+		padding: 30px;
+	}
+}
+
+
+
+
+
+
+
+
+
+// .product-option {
+// 	margin-bottom: 45px;
+
+// 	&__title {
+// 		font-size: 18px;
+// 		font-weight: bold;
+
+// 		margin-bottom: 10px;
+// 	}
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////
+// DETAILS
+////////////////////////////////////////
+
+
 .single-product-title {
 	font-size: 28px;
 	font-weight: bold;
@@ -29,43 +97,6 @@
 }
 
 
-.product-count {
-
-	&__title {
-		font-weight: 600;
-		line-height: 1;
-
-		margin-bottom: 8px;
-	}
-
-	&__number {
-
-		input {
-			font: inherit;
-			font-size: 18px;
-			border: 1px solid rgba($c-black, .5);
-			border-radius: 3px;
-
-			padding: 10px 15px;
-		}
-	}
-}
-
-
-.product-option {
-	margin-bottom: 45px;
-
-	&__title {
-		font-size: 18px;
-		font-weight: bold;
-
-		margin-bottom: 10px;
-	}
-}
-
-.product-options {
-
-}
 
 .product-price {
 	max-width: 320px;
@@ -85,8 +116,9 @@
 }
 
 .product-total {
-	background-color: rgba($c-black, .1);
-	border-radius: 3px;
+	background-color: rgba($c-black, .05);
+	border: 3px solid rgba($c-black, .2);
+	border-radius: 4px;
 
 	padding: 30px;
 	margin-top: 30px;
@@ -95,8 +127,14 @@
 
 
 
+
+
+
+
+
+
 ///////////////////////////
-// MAIN WRAPPER
+// LAYOUT
 ///////////////////////////
 
 .single-product {

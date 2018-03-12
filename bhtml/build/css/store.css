@@ -13,6 +13,16 @@ body {
   background-color: #fff;
 }
 
+.text {
+  font-family: "PT Serif", serif;
+  font-weight: normal;
+  line-height: 1.7;
+}
+
+.text p {
+  margin-bottom: 1.5em;
+}
+
 .section {
   padding-top: 45px;
   padding-bottom: 45px;
@@ -137,6 +147,80 @@ h1, h2, h3, h4, h5, h6 {
   .page-title {
     font-size: 38px;
   }
+}
+
+.radios-grid .radio-wrap {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 12px;
+}
+
+.radio-wrap .radios-list {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.radio {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.radio input[type="radio"] {
+  display: none;
+}
+
+.radio .radio-content {
+  font-weight: 500;
+  background-image: url(../assets-store/icons/radio.svg);
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: 8px center;
+  display: block;
+  padding: 6px 20px;
+  padding-left: 38px;
+}
+
+.radio input[type="radio"]:checked ~ .radio-content {
+  background-color: rgba(34, 35, 36, 0.1);
+  background-image: url(../assets-store/icons/radio-checked.svg);
+}
+
+.checkboxes-grid .checkbox-wrap {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 12px;
+}
+
+.checkbox-wrap .checkboxes-list {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.checkbox {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox .checkbox-content {
+  font-weight: 500;
+  background-image: url(../assets-store/icons/checkbox.svg);
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: 8px center;
+  display: block;
+  padding: 6px 20px;
+  padding-left: 38px;
+}
+
+.checkbox input[type="checkbox"]:checked ~ .checkbox-content {
+  background-color: rgba(34, 35, 36, 0.1);
+  background-image: url(../assets-store/icons/checkbox-checked.svg);
 }
 
 .logo {
@@ -407,6 +491,26 @@ h1, h2, h3, h4, h5, h6 {
   opacity: .7;
 }
 
+.product-section {
+  background-color: rgba(34, 35, 36, 0.05);
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.product-section__title {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 360px) {
+  .product-section {
+    padding: 30px;
+  }
+}
+
 .single-product-title {
   font-size: 28px;
   font-weight: bold;
@@ -437,30 +541,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 30px;
 }
 
-.product-count__title {
-  font-weight: 600;
-  line-height: 1;
-  margin-bottom: 8px;
-}
-
-.product-count__number input {
-  font: inherit;
-  font-size: 18px;
-  border: 1px solid rgba(34, 35, 36, 0.5);
-  border-radius: 3px;
-  padding: 10px 15px;
-}
-
-.product-option {
-  margin-bottom: 45px;
-}
-
-.product-option__title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
 .product-price {
   max-width: 320px;
   margin-bottom: 5px;
@@ -480,8 +560,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .product-total {
-  background-color: rgba(34, 35, 36, 0.1);
-  border-radius: 3px;
+  background-color: rgba(34, 35, 36, 0.05);
+  border: 3px solid rgba(34, 35, 36, 0.2);
+  border-radius: 4px;
   padding: 30px;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -507,7 +588,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .product-thumb {
+  text-decoration: none;
+  color: #222324;
+  border: 3px solid rgba(34, 35, 36, 0.1);
+  border-radius: 4px;
   display: block;
+  height: 100%;
+  padding: 15px;
+  -webkit-transition: 200ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: 200ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.product-thumb:hover, .product-thumb:focus {
+  text-decoration: none;
+  color: #222324;
+  background-color: rgba(34, 35, 36, 0.05);
 }
 
 .product-thumb__img {
@@ -522,7 +617,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .product-thumb__title {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
 }
 
